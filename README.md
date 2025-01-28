@@ -7,5 +7,8 @@ The book about the Great Emperor Mao
 
 [正文](chapter00.md)
 
+[毛氏年谱](biology.md)
+
+
 有任何问题，请发信到itgotousa@gmail.com
 
