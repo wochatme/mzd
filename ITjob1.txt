@@ -1,0 +1,60 @@
+# 欧式几何和计算机的关系(1/2)
+
+计算机是西方世界发明的，它的底层就是0和1。如果把1视为“阳”，把0看作“阴”，计算机的成功暗合了中国人说的一阴一阳为之道的思想。我打算花费两篇文章来阐述欧式几何和计算机的关系，目的就是想证明一件事情：计算机的难度并不比欧式几何高，如果你对掌握几何学知识非常自信，你自然对掌握所谓“高大上”的计算机技术充满信心。
+
+## 定义(Definition)
+在欧式几何的体系中，首先需要学习的对象是一些基本概念的定义。定义的英语单词是definition，它的含义是：a statement of the meaning of a term，即“描述某个术语的含义的语句”。下面我们看看欧式几何中对于点(point)、线(line)和面(surface)的定义：
+D1. 点是没有长度和宽度的东西(a point is that which has no part)。
+D2. 线是没有宽度的长(a line is breadthless length)。在这里breadthless的意思是without breadth。
+D3. 面是有宽度和长度的东西(a surface is that which has length and breadth only)。
+
+下面的论述描述了点、线和面三者的关系：
+D4. 线是由点组成的(the extremities of a line are points)。
+D5. 面是由线组成的(the extremities of a surface are lines)。
+
+在上面的论述中，extremity的含义是the extreme degree or nature of something，即某个东西的最基本的度或者自然。通过上面的描述，结合我们的正常思维，我们都可以很轻易地理解这些描述所表达的意思。
+
+## 公理(Postulate)
+当我们理解了这些基本对象(点、线、面，以及圆，直角，钝角和锐角)的清晰概念后，欧式几何进一步给出了一些不言自明，无法被证明的公理(postulate)。英语单词postulate的含义是a thing suggested or assumed as true as the basis for reasoning, discussion, or belief，即公理是一种观点，这种观点是被认为是正确的，它是逻辑思维、讨论或者信仰的基石。换成中国人更容易接受的表达方式就是：公理是不言自明，不需要被证明的，你必须相信的观点。欧式几何给出了如下几个公理：
+P1. 两点之间可以做一条直线(to draw a straight line from any point to any point)。
+P2. 任意线段能无限延伸成一条直线(to produce a finite straight line continuousely in a straight line)。
+P3. 给定任意线段，可以以其一个端点作为圆心，该线段作为半径作一个圆(to describe a circle with any centre and distance)。
+P4. 所有直角都相等(that all right angles are equal to one another)。
+P5. 若两条直线都与第三条直线相交，并且在同一边的内角之和小于两个直角，则这两条直线在这一边必定相交。
+
+第五条公理P5的英文表述比较长，有兴趣的读者可以自行在互联网上查阅。上述五条公理是任何人都可以轻易地理解的，我们同意P1到P5的观点，但是我们却无法证明它们，只能被动地接受其为真理。
+
+## 公设(Common Notion)
+欧式几何紧接着给出了五条公设。公设的英文单词是Common Notion，它的含义是a widely accepted idea or belief that most people agree on. It's something that is generally understood to be true without needing a lot of explanation，即被绝大部分人接受的观点和信仰，公设是不需要过多解释的，普遍理解并被认为是真的东西。五条公设如下：
+C1. 与同一事物相等的事物相等(things which are equal to the same thing are also equal to one another)。
+C2. 相等的事物加上相等的事物仍然相等(if equals be added to equals, the wholes are equal)。
+C3. 相等的事物减去相等的事物仍然相等(if equals be subtracted from equals, the remainders are equal)。
+C4. 一个事物与另一事物重合，则它们相等(things which coincide with one another are equal to one another)。
+C5. 整体大于局部(the whole is greater than the part)。
+
+## 定理(Proposition)
+在学习完毕定义、公理和公设后，欧式几何的绝大部分内容都是关于定理的。定理的英语单词是propositon，它的含义是a statement or assertion that expresses a judgment or opinion，即定理是表达一种判断或者观点的描述语句。这种判断的描述语句是否为真，是需要人们运用逻辑思维进行证明的。
+
+我们看一个定理的证明过程。这条定理是这样描述的，请告诉我如何在一个有限长度的线段上构造一个等边三角形(on a given finite straight line to construct an equilateral triangle)。等边三角形即三条边都相等的三角形(an equliateral triangle is that which has its three sides equal)。
+
+证明过程如下：
+S1. 假设AB是一条给定的有限长度的线段，我们的任务是基于AB这条线段构造出一个等边三角形。
+S2. 以A为圆心，AB为半径，画一个圆BCD。根据公理P3我们可以轻易地完成这个任务。
+S3. 类似的，我们可以B为圆心，BA为半径，画一个圆ACE。
+S4. 圆BCD和圆ACE必然相交在某些点，假设其中一个交点为C。基于公理P1，我们可以轻易地画出两个线段CA和CB。则ABC三个点组成的三角形即为满足要求的等边三角形。
+
+步骤S1到S4描述了如何构造一个等边三角形，下面我们需要证明ABC是一个等边三角形。证明步骤如下：
+S5. 因为A是圆CDB的圆心，根据圆的定义，AC = AB。
+S6. 因为B是圆CAE的圆心，根据圆的定义，BC = BA。
+S7. 所以CA = CB，这是根据公设C1来判断的。
+
+结论：三角形ABC的三个边存在如下关系：AC = AB = BC，所以这个三角形为等边三角形。
+
+## 总结
+
+通过上面的讲解，我们大体上对欧式几何的体系结构有了一个基本的认识，即它构造了定义，公理和公设，再由这三者作为逻辑思考的起点，进行严密的推理，产生出形形色色的定理，如三角形内角和为180度，勾股定理等等。 由于其强大的结构，让任何人不得不信服它所推导的任何被证明过的定理。
+
+欧式几何在西方文明中拥有独特的地位，它彰显了人类固有的理性思维的强大。任何科技的研究，都是以类似欧式几何的体系结构产生的思维模式推动的。西方人在逻辑推理方面的成就举世公认，但是中国人依然可以轻松掌握这种思考方法，来推动自己国家的科技发展。
+
+计算机是一种精密的逻辑机器，它的创造和运行，百分百遵循类似欧式几何的理性思维。如果你觉得欧式几何非常容易，那么你完全可以通过努力，在樱桃溪学院的精心培训下，一步步成长，在半年左右的时间内，变成一个计算机技术高手，顺顺利利找到并胜任一份十几万美金的高薪工作。
+
